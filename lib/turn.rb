@@ -14,7 +14,7 @@ def input_to_index(index)
   index = index.to_i
   x = index - 1
   if !x.between?(-1, 8)
-    return -1
+    return false
   else
     return index
   end
