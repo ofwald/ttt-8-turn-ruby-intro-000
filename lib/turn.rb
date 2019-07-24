@@ -12,7 +12,7 @@ end
 
 def input_to_index(index)
   index = index.to_i
-  x = index - 1
+  index = index - 1
   if !x.between?(-1, 8)
     return false
   else
