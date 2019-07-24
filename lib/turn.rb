@@ -10,12 +10,18 @@ def turn(board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ])
   end
 end
 
-def valid_move?(board, index)
+def input_to_index(index)
   index = index.to_i
   x = index - 1
   if !x.between?(-1, 8)
-    return false
+    return -1
   else
+    return index
+  end
+end
+  
+def valid_move?(board, index)
+
     if position_taken?(board, index)
       return false
     else
