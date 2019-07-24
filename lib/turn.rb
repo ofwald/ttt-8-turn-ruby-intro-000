@@ -14,20 +14,16 @@ def input_to_index(index)
   index = index.to_i
   index = index - 1
   return index
-  if !index.between?(-1, 8)
-    return false
-  else
-    return index
-  end
 end
 
-def valid_move?(board, index)
+def valid_move?(index)
     index = input_to_index(index)
-    if position_taken?(board, index)
+    if !index.between?(-1, 8)
       return false
     else
-      true
+      return index
     end
+    
   end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
