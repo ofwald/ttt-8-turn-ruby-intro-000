@@ -3,10 +3,11 @@
 def turn(board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ])
   puts "what play?"
   input = gets.strip
+  input = input.to_i
   if valid_move?(board, input)
     board[input] = "X"
-  display_board(board)
-end
+    display_board(board)
+  end
 end
 
 def valid_move?(board, index)
