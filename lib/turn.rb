@@ -19,7 +19,7 @@ def input_to_index(index)
     return index
   end
 end
-  
+
 def valid_move?(board, index)
 
     if position_taken?(board, index)
