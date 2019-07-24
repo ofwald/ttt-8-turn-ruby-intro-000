@@ -34,3 +34,4 @@ end
 def move(board, input, token="X")
   index = input_to_index(input)
   board[index] = token
+end
