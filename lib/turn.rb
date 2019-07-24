@@ -12,7 +12,7 @@ def input_to_index(index)
   return index
 end
 
-def valid_move?(index)
+def valid_move?(index, board)
     index = input_to_index(index)
     if !index.between?(-1, 8)
       return false
